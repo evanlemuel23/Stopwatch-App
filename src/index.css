@@ -1,0 +1,135 @@
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradientAnimation 10s ease infinite alternate;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    }
+    100% {
+        background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+    }
+}
+
+
+.stopwatch-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    background: flex;
+    justify-content: center;
+    padding: 90px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+    animation: glow 2s infinite alternate;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 20px #00ff00;
+    }
+}
+
+
+p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    animation: pulse 1.5s infinite alternate;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    color: white;
+    background: black;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+
+button:active {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    box-shadow: 0 0 20px #ff0000;
+    transition: background 0.5s ease-out;
+
+
+.start-button {
+    justify-content: center;
+    background-color: black;
+}
+
+.start-button:hover {
+    box-shadow: 0 0 20px hsl(125, 47%, 54%);
+}
+
+
+.stop-button {
+    justify-content: center;
+    background-color: black;
+}
+
+.stop-button:hover {
+    box-shadow: 0 0 20px hsl(10, 90%, 50%);
+}
+
+/
+.reset-button {
+    justify-content: center;
+    background-color: black;
+}
+
+.reset-button:hover {
+    box-shadow: 0 0 20px hsl(207, 90%, 50%);
+}}
